@@ -10,7 +10,7 @@
 
 #Вторая лаба!!!
 
-Папочка 2/First/, файл main.cpp
+Папочка ["2/First/"](https://github.com/programming-653502/Shilov/tree/master/2/First), файл [main.cpp](https://github.com/programming-653502/Shilov/blob/master/2/First/main.cpp)
 
 (2.1.30) Условие:
 >"**Натуральное число.** Разработать программу, меню которой
