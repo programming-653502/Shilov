@@ -1,20 +1,19 @@
 //
-//  Created by Максим Шилов on 16.02.17.
+//  Created by Максим Шилов on 17.02.17.
 //  Copyright © 2017 Максим Шилов. All rights reserved.
 //
 
-/* Дано натуральное k и последовательность цифр 101112131415… 
- в которой выписаны все двузначные числа. Определить k-ю цифру последовательности. */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void) {
-    char* array = new char[180];
+    char* array = malloc(180 * sizeof(char));
     int j = 0, k;
     for(int i = 10; i < 100; i++)
     {
-        array[j] = char ((i / 10) % 10 + (int)'0');
-        array[j + 1] = char(i % 10 + (int)'0');
+        array[j] = (char) ((i / 10) % 10 + (int)'0');
+        array[j + 1] = (char)(i % 10 + (int)'0');
         j += 2;
     }
     printf("Последовательность:");
