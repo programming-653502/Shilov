@@ -73,6 +73,15 @@ int countOfVowels(Node *q){
     return count;
 }
 
+void answer(int vowels, int consonants){
+    if(vowels > consonants)
+        puts("Гласных больше");
+    else if(vowels == consonants)
+        puts ("Гласных и согласных поровну");
+    else
+        puts ("Согласных больше");
+}
+
 int main(){
     Node *root = NULL;
     char* s = (char*)malloc(sizeof(char*) * 256);
@@ -88,5 +97,6 @@ int main(){
     consonants = (int) strlen(s) - countOfVowels(root);
     printf("Количество гласных: %d\n", vowels);
     printf("Количество согласных: %d\n", consonants);
+    answer(vowels, consonants);
     return 0;
 }
