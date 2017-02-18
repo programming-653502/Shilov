@@ -77,9 +77,9 @@ void answer(int vowels, int consonants){
     if(vowels > consonants)
         puts("Гласных больше");
     else if(vowels == consonants)
-        puts ("Гласных и согласных поровну");
+        puts("Гласных и согласных поровну");
     else
-        puts ("Согласных больше");
+        puts("Согласных больше");
 }
 
 int main(){
