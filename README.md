@@ -84,8 +84,7 @@
 
 #Седьмая лаба!!!
 
-Скоро будет :)
-
+Папочка ["7"](https://github.com/programming-653502/Shilov/tree/master/7), файл [main.cpp](https://github.com/programming-653502/Shilov/blob/master/7/main.cpp)
 (6.2.27) Условие:
 
 >"Интерпол. База Интерпола содержит информацию о международных преступлениях и преступниках. База преступлений
