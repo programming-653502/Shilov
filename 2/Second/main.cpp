@@ -11,6 +11,7 @@
 
 double fact(int n);
 double func(double x, int n);
+double recFunc(double x, int n);
 
 int main(void) {
     double x, sinValue, rightValue, e;
@@ -19,12 +20,18 @@ int main(void) {
     scanf("%lf", &x);
     printf("Введите точность E: \n");
     scanf("%lf", &e);
+    while(e <= 0){
+        rewind(stdin);
+        printf("Введите точность E: \n");
+        scanf("%lf", &e);
+    }
     e = fabs(e);
     sinValue = sin(x);
     rightValue = 0;
     n = 0;
     for (int i = 1; i < 10000; i++){
-        rightValue = func(x, i);
+//        rightValue = recFunc(x, i);
+        rightValue = recFunc(x, i);
         if (fabs(sinValue - rightValue) < e){
             n = i;
             break;
@@ -41,6 +48,13 @@ double func(double x, int n){
         res += pow((-1), i - 1) * pow(x, 2 * i - 1) / fact(2 * i - 1);
     }
     return res;
+}
+
+double recFunc(double x, int n){
+    if (n == 0)
+        return 0;
+    double result = pow((-1), n - 1) * pow(x, 2 * n - 1) / fact(2 * n - 1);
+    return result + recFunc(x, n - 1);
 }
 
 double fact(int n){
