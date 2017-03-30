@@ -2,15 +2,14 @@
 //  Created by Максим Шилов on 17.02.17.
 //  Copyright © 2017 Максим Шилов. All rights reserved.
 //
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
 int findNumber(char* string);
 int main(void) {
-    int N = 1000, countOfRaws = 0;
-    char buffer[N];
+    int N = INT32_MAX, countOfRaws = 0;
+    char *buffer = (char*) malloc(sizeof(char) * N);
     FILE *fp;
     fp = fopen("file.txt", "r+");
     if (!fp) exit(1);
@@ -34,6 +33,10 @@ int main(void) {
     }
     for (int i = 0; i < countOfRaws; i++){
         int j = findNumber(text[i]) - 1;
+        if(newText[j] == NULL){
+            printf("\nОшибка в файле\nЗавершение программы...\n\n");
+            exit(1);
+        }
         strcpy(newText[j], text[i]);
     }
     fseek(fp, 0, SEEK_SET);
@@ -42,6 +45,7 @@ int main(void) {
         fprintf(fp, "%s", &newText[i] [ '\0']);
         printf("%s", newText[i]);
     }
+    
     fclose(fp);
     return 0;
 }
@@ -52,7 +56,6 @@ int findNumber(char* string){
         if(string[32 + i] >= '0' && string[32 + i] <= '9'){
             count++;
             position = i;
-            printf("%c\n", string[32 + i]);
         }
         else if(count != 0)
             break;
