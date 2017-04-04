@@ -1,12 +1,10 @@
-size = 100000
+size = 1000000
 array = []
 
 File.open('file.txt', 'w'){ |file| file.write "" }
 
 puts Time.now
 array = (1..size).to_a
-puts Time.now
-
 symbols_and_numbers = ['a'..'z','A'..'Z','0'..'9'].map{ |range| range.to_a }.flatten
 symbols = ['a'..'z','A'..'Z'].map{ |range| range.to_a }.flatten
 numbers = ['0'..'9'].map{ |range| range.to_a }.flatten
