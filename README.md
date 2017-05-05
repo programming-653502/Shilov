@@ -1,5 +1,7 @@
 #Лабы
 
+#Code style: ["Webkit"](https://webkit.org/code-style-guidelines/)
+
 #Первая лаба!!!
 
 Папочка ["1"](https://github.com/programming-653502/Shilov/tree/master/1), файл [main.c](https://github.com/programming-653502/Shilov/blob/master/1/main.c)

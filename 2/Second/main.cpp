@@ -13,14 +13,15 @@ double fact(int n);
 double func(double x, int n);
 double recFunc(double x, int n);
 
-int main(void) {
+int main(void)
+{
     double x, sinValue, rightValue, e;
     int n;
     printf("Введите x: \n");
     scanf("%lf", &x);
     printf("Введите точность E: \n");
     scanf("%lf", &e);
-    while(e <= 0){
+    while (e <= 0) {
         rewind(stdin);
         printf("Введите точность E: \n");
         scanf("%lf", &e);
@@ -29,10 +30,9 @@ int main(void) {
     sinValue = sin(x);
     rightValue = 0;
     n = 0;
-    for (int i = 1; i < 10000; i++){
-//        rightValue = recFunc(x, i);
+    for (int i = 1; i < 10000; i++) {
         rightValue = recFunc(x, i);
-        if (fabs(sinValue - rightValue) < e){
+        if (fabs(sinValue - rightValue) < e) {
             n = i;
             break;
         }
@@ -42,24 +42,27 @@ int main(void) {
     return 0;
 }
 
-double func(double x, int n){
+double func(double x, int n)
+{
     double res = 0;
-    for (int i = 1; i <= n; i++){
+    for (int i = 1; i <= n; i++) {
         res += pow((-1), i - 1) * pow(x, 2 * i - 1) / fact(2 * i - 1);
     }
     return res;
 }
 
-double recFunc(double x, int n){
+double recFunc(double x, int n)
+{
     if (n == 0)
         return 0;
     double result = pow((-1), n - 1) * pow(x, 2 * n - 1) / fact(2 * n - 1);
     return result + recFunc(x, n - 1);
 }
 
-double fact(int n){
+double fact(int n)
+{
     double res = 1;
-    for (int i = 2; i <= n; i++){
+    for (int i = 2; i <= n; i++) {
         res *= i;
     }
     return res;
