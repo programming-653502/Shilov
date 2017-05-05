@@ -1,8 +1,8 @@
-#Лабы
+# Лабы
 
-#Code style: ["Webkit"](https://webkit.org/code-style-guidelines/)
+# Code style: [Webkit](https://webkit.org/code-style-guidelines/)
 
-#Первая лаба!!!
+# Первая лаба!!!
 
 Папочка ["1"](https://github.com/programming-653502/Shilov/tree/master/1), файл [main.c](https://github.com/programming-653502/Shilov/blob/master/1/main.c)
 
@@ -10,7 +10,7 @@
 
 >"Дано натуральное k и последовательность цифр 101112131415… в которой выписаны все двузначные числа. Определить k-ю цифру последовательности."
 
-#Вторая лаба!!!
+# Вторая лаба!!!
 
 Папочка ["2/First/"](https://github.com/programming-653502/Shilov/tree/master/2/First), файл [main.cpp](https://github.com/programming-653502/Shilov/blob/master/2/First/main.cpp)
 
@@ -42,7 +42,7 @@
 отличается от sin x менее, чем на заданную погрешность ε?
 Испытать разложение на сходимость при разных значениях х."
 
-#Третья лаба!!!
+# Третья лаба!!!
 
 Папочка ["3"](https://github.com/programming-653502/Shilov/tree/master/3), файл [main.cpp](https://github.com/programming-653502/Shilov/blob/master/3/main.cpp)
 
@@ -50,7 +50,7 @@
 
 >"Массив a(n, n) разбивается на 4 четверти, ограниченные главной и побочной диагоналями: верхнюю, нижнюю, левую, правую. Поменять местами элементы верхней и нижней четвертей, правой и левой четвертей. Найти суммы элементов каждой четверти, без учета элементов, расположенных на диагоналях."
 
-#Четвёртая лаба!!!
+# Четвёртая лаба!!!
 
 Папочка ["4/First/"](https://github.com/programming-653502/Shilov/tree/master/4/First), файл [main.cpp](https://github.com/programming-653502/Shilov/blob/master/4/First/main.cpp)
 
@@ -66,7 +66,7 @@
 
 >"Текстовый файл состоит из 40-байтовых строк. Последние 8 байтов строки содержат номер строки (в случайном порядке). Упорядочить строки в файле по номерам."
 
-#Пятая лаба!!!
+# Пятая лаба!!!
 
 Папочка ["5"](https://github.com/programming-653502/Shilov/tree/master/5), файл [main.cpp](https://github.com/programming-653502/Shilov/blob/master/5/main.cpp)
 
@@ -74,7 +74,7 @@
 
 >"Разработать функцию, которая инвертирует заданный список, т.е. первый элемент становится последним, второй – предпоследним и т.д."
 
-#Шестая лаба!!!
+# Шестая лаба!!!
 
 Папочка ["6"](https://github.com/programming-653502/Shilov/tree/master/6), файл [main.cpp](https://github.com/programming-653502/Shilov/blob/master/6/main.cpp)
 
@@ -84,7 +84,7 @@
 пользователем. Разработать функцию, вычисляющую, каких букв
 больше – гласных или согласных."
 
-#Седьмая лаба!!!
+# Седьмая лаба!!!
 
 Папочка ["7"](https://github.com/programming-653502/Shilov/tree/master/7), файл [main.cpp](https://github.com/programming-653502/Shilov/blob/master/7/main.cpp)
 
